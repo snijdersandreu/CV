@@ -93,33 +93,45 @@ h2 {
         display: block;
     }
 
-    body .info h1 {
-        font-size: 15px;
-        margin: 0 0 5px;
+    body {
+        font-size: 14px; /* Adjust base font size */
     }
 
-    .profile-picture, .info {
-        width: 100%;
-        text-align: left; /* Ensure text alignment is consistent */
+    header h1 {
+        font-size: 20px; /* Increase font size for visibility */
+    }
+
+    header p, .info p {
+        font-size: 14px; /* Adjust font size for readability */
+    }
+
+    h2 {
+        font-size: 18px; /* Adjust heading size for clarity */
+    }
+
+    .container {
+        padding: 10px; /* Reduce padding for screen space utilization */
+    }
+
+    section {
+        padding: 10px 0;
+        margin-bottom: 10px;
     }
 
     .profile-picture img {
-        display: inline-block; /* Keep the image inline */
+        display: block; /* Adjust display for consistent alignment */
         width: 60px; /* Adjust size for mobile */
         height: 60px; /* Adjust size for mobile */
-        margin-right: 10px; /* Add some space between the image and the text */
+        margin: 0 auto 10px; /* Center image and add space below */
     }
 
     .info {
-        display: inline-block;
-        vertical-align: top; /* Align the text block to the top of the image */
-        width: calc(100% - 70px); /* Adjust width to accommodate image size and margin */
         padding-top: 0;
+        padding-left: 0;
+        text-align: center; /* Center text for a cleaner look */
     }
 
-
+    .skills li, .skills .skill-details p {
+        padding: 8px; /* Slightly reduce padding */
+    }
 }
-
-
-
-
