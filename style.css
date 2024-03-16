@@ -94,7 +94,7 @@ h2 {
     }
 
     .profile-picture, .info {
-        width: 100%;
+        width: 50%;
         text-align: left; /* Ensure text alignment is consistent */
     }
 
@@ -114,7 +114,7 @@ h2 {
 
     /* Reset margins for header elements */
     .info h1 {
-        font-size: 12px; /* Smaller font size for mobile devices */
+        font-size: 18px; /* Smaller font size for mobile devices */
         margin: 0 0 5px; /* Adjusted margin for compact spacing */
     }
 
