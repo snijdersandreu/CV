@@ -93,6 +93,11 @@ h2 {
         display: block;
     }
 
+    body .info h1 {
+        font-size: 15px;
+        margin: 0 0 5px;
+    }
+
     .profile-picture, .info {
         width: 100%;
         text-align: left; /* Ensure text alignment is consistent */
@@ -112,11 +117,6 @@ h2 {
         padding-top: 0;
     }
 
-    /* Reset margins for header elements */
-    .info h1 {
-        font-size: 10px; /* Smaller font size for mobile devices */
-        margin: 0 0 5px; /* Adjusted margin for compact spacing */
-    }
 
 }
 
