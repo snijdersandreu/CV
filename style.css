@@ -88,30 +88,32 @@ h2 {
     padding-left: 20px;
 }
 
-/* Basic styles remain unchanged */
-
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     header {
         flex-direction: column;
-        text-align: center;
-        padding: 20px 0;
+        text-align: left; /* Align text to the left for consistency with the image alignment */
     }
 
     .profile-picture, .info {
-        width: 100%; 
+        width: 100%;
         padding: 0;
+        display: flex; /* Keep the flex display for alignment */
+        align-items: center; /* Align items in the center vertically */
     }
 
     .profile-picture img {
-        margin: 0 auto 20px; 
+        margin: 0 0 20px 0; /* Keep the image aligned to the left with margin only at the bottom */
+        width: 60px; /* Optional: Adjust for smaller screens */
+        height: 60px; /* Optional: Adjust for smaller screens */
     }
 
     .info {
-        padding-top: 10px; 
+        padding-top: 10px; /* Add some padding on top for spacing after the image */
     }
 
+    /* Reset margins for h1 and p to align properly next to the image, if needed */
     .info h1, .info p {
-        margin: 0.5em 0; 
+        margin-left: 10px; /* Add some space on the left for text */
     }
 }
 
