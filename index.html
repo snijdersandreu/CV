@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andreu Snijders | Curriculum Vitae</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-picture">
+                <img src="path/to/your-image.jpg" alt="Andreu Snijders">
+            </div>
+            <div class="info">
+                <h1>Andreu Snijders</h1>
+                <p>AudioVisual Systems Engineer</p>
+            </div>
+        </header>
+
+
+
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p><b>Email:</b> snijdersandreu@gmail.com</p>
+            <p><b>Phone:</b> +34 664768441</p>
+            <p><b>LinkedIn:</b><a href="linkedin.com/in/andreu-snijders-trullàs-2562b7293"> linkedin.com/in/andreu-snijders-trullàs-2562b7293</a> </p>
+            <p><b>GitHub:</b><a href="github.com/snijdersandreu"> github.com/snijdersandreu</a>
+            <br>
+        </section>
+        <section class="education">
+            <h2>Education</h2>
+            
+            <div class="school">
+                <h3>Audiovisual Systems Engineering (Telecommunications Systems)</h3>
+                <h4>UPC ESEIAAT, September 2020 - Present</h4>
+                <p>This program has taught me the workings of telecommunications systems, with a focus on audiovisual
+                    systems. I have acquired knowledge in analog circuits, audio and video hardware, IoT device
+                    development, digital signal processing, and programming.</p>
+
+                <br>
+            </div>
+            
+        </section>
+        <section class="experience">
+            <h2>Experience</h2>
+            
+            <div class="job">
+                <h3>Audiovisual Technician/Event Coordinator at LINCAV UPC</h3>
+                <h4>September 2023 - July 2024</h4>
+                <ul>
+                    <li>Planning and configuring the audiovisual equipment layout for events.</li>
+                    <li>Ensuring optimal setup and calibration of video and audio systems.</li>
+                    <li>Maintaining good quality sound within the event venue and streaming.</li>
+                    <li>Exploring strategies to improve content quality during production and in post-production editing.</li>
+                </ul>
+                <br>
+            </div>
+            
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            
+            <ul>
+                <li>
+                    Programming
+                    <div class="skill-details" style="display:none;">
+                        <p>I have worked a lot with Python and C++, and I have also programmed databases on SQL.<br>
+                            I love Deep Learning and enjoy training my own models as a learning excercise.
+                            I also enjoy making IoT projects with Arduino-like microcontrollers. <br>I don't
+                            feel limited by the coding languages I have worked with and I am always open to find the
+                            best solution for each problem. An example is the webpage you are reading right now, as
+                            I have built it from scratch.<br>
+                            You can find some of my projects on my github (<a href="github.com/snijdersandreu"> github.com/snijdersandreu</a>).
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    Sound technician
+                    <div class="skill-details" style="display:none;">
+                        <p>I feel confortable working with sound mixing tables
+                            and audio setups in general. I can plan and configure the audiovisual 
+                            equipment layout for events.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    Video and Audio Production
+                    <div class="skill-details" style="display:none;">
+                        <p>I have some experience in creating and refining audiovisual content. 
+                            I utilize top industry software, including Logic Pro X and Ableton Live for audio production, 
+                            and Final Cut Pro X for video editing. Additionally, I have hands-on experience with Adobe's 
+                            Premiere Pro and Audition for multimedia projects.</p>
+                    </div>
+                </li>
+                
+                <p>(click to unfold)</p>
+            </ul>
+        </section>
+
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Smooth scroll functionality for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Toggle functionality for skill details
+            document.querySelectorAll('.skills li').forEach(skill => {
+                skill.addEventListener('click', function () {
+                    let details = this.querySelector('.skill-details');
+                    if (details.style.display === "none") {
+                        details.style.display = "block";
+                    } else {
+                        details.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
